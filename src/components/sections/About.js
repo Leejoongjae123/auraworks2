@@ -1,4 +1,26 @@
+import Link from "next/link";
+
 const About = () => {
+  // 나이 계산 함수 추가
+  const calculateAge = (birthDate) => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDiff = today.getMonth() - birth.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birth.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
+  };
+
+  // 생년월일 설정
+  const birthDate = "1988-08-15";
+  const age = calculateAge(birthDate);
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
@@ -11,40 +33,42 @@ const About = () => {
         >
           <div>
             <div>
-              <img className="my-photo" src="assets/about.jpg" alt="" />
+              <img
+                className="my-photo w-32 h-auto object-cover"
+                src="assets/profile/profile1.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
         {/* IMAGE ENDS */}
         {/* INFO STARTS */}
-        <div>
-          <h2>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Steven
+        <div className="flex flex-row  flex-between">
+          
+            <div >
+              <h2>
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                  CEO
+                </span>
               </span>
-            </span>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Walker
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                  이중재
+                </span>
               </span>
-            </span>
-          </h2>
+              </h2>
+            </div>
+
+            
+          
           <div className="infos">
             <ul>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Age :</span>
-                    <span>27 Years</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Nationality :</span>
-                    <span>German</span>
+                    <span>나이 :</span>
+                    <span>{age}</span>
                   </span>
                 </span>
               </li>
@@ -59,8 +83,14 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Langages :</span>
-                    <span>English</span>
+                    <span>크몽 :</span>
+
+                    <Link
+                      className="text-[#FFB400] "
+                      href="https://kmong.com/@아우라웍스"
+                    >
+                      링크
+                    </Link>
                   </span>
                 </span>
               </li>
@@ -69,32 +99,24 @@ const About = () => {
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Address :</span>
-                    <span>London</span>
+                    <span>주소 :</span>
+                    <span>서울 강남</span>
                   </span>
                 </span>
               </li>
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Phone :</span>
-                    <span>21 184 010</span>
+                    <span>연락처 :</span>
+                    <span>010-9070-3001</span>
                   </span>
                 </span>
               </li>
-              <li>
+              <li className="">
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Email :</span>
-                    <span>contact@steven.net</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Skype :</span>
-                    <span>steven.walker</span>
+                    <span>이메일 :</span>
+                    <span>ljj3347@auraworks.kr</span>
                   </span>
                 </span>
               </li>
@@ -124,17 +146,17 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-wordpress-plain" />
+                <i class="devicon-nextjs-plain"></i>
               </span>
-              <h4>WordPress</h4>
+              <h4>Nextjs</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-jquery-plain" />
+                <i class="devicon-python-plain"></i>
               </span>
-              <h4>jQuery</h4>
+              <h4>Python</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -142,17 +164,17 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-angularjs-plain" />
+                <i class="devicon-fastapi-plain"></i>
               </span>
-              <h4>Angular JS</h4>
+              <h4>Fast API</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-drupal-plain" />
+                <i class="devicon-supabase-plain"></i>
               </span>
-              <h4>Drupal</h4>
+              <h4>Supabase</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -160,35 +182,35 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i className="devicon-react-plain" />
+                <i class="devicon-tailwindcss-original"></i>
               </span>
-              <h4>React JS</h4>
+              <h4>Tailwindcss</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i className="devicon-docker-plain" />
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+              </span>
+              <h4>AWS</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
+          </div>
+          <div>
+            {/* SKILL ITEM STARTS */}
+            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
+              <span>
+                <i class="devicon-postgresql-plain"></i>
+              </span>
+              <h4>PostgrSQL</h4>
+            </div>
+            {/* SKILL ITEM ENDS */}
+            {/* SKILL ITEM STARTS */}
+            <div className="animated-layer fade-in-up-animation fadeInRight wow">
+              <span>
+                <i class="devicon-docker-plain"></i>
               </span>
               <h4>Docker</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-          </div>
-          <div>
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-down-animation fadeInLeft wow">
-              <span>
-                <i className="devicon-nodejs-plain" />
-              </span>
-              <h4>Node JS</h4>
-            </div>
-            {/* SKILL ITEM ENDS */}
-            {/* SKILL ITEM STARTS */}
-            <div className="animated-layer fade-in-up-animation fadeInRight wow">
-              <span>
-                <i className="devicon-sass-plain" />
-              </span>
-              <h4>Sass</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>

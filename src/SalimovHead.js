@@ -2,10 +2,11 @@ import Head from "next/head";
 const SalimovHead = () => {
   return (
     <Head>
-      <title>Salimov - Horizontal Personal Portfolio</title>
+      <title>AURAWORKS</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {/* Template Google Fonts */}
+      <link rel="icon" href="/assets/logos/logo.jpg" type="image/jpeg" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
@@ -25,6 +26,9 @@ const SalimovHead = () => {
       {/* Live Style Switcher - demo only */}
 
       <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+      
+      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     </Head>
   );
 };
