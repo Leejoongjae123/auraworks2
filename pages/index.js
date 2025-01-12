@@ -26,6 +26,9 @@ const Index = () => {
           name="naver-site-verification"
           content="642b9efe2d11ed371f6dc35185796b7998e631f8"
         />
+        <meta name="description" content="웹 에이전시 아우라웍스 소개" />
+        <meta property="og:title" content="아우라웍스" />
+        <meta property="og:description" content="웹 에이전시 아우라웍스 소개" />
       </Head>
       <div className="page-content">
         <Header />
