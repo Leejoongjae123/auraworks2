@@ -44,9 +44,8 @@ const About = () => {
         {/* IMAGE ENDS */}
         {/* INFO STARTS */}
         <div className="flex flex-row  flex-between">
-          
-            <div >
-              <h2>
+          <div>
+            <h2>
               <span>
                 <span className="animated-layer fade-in-up-animation fadeInUp wow">
                   CEO
@@ -57,11 +56,9 @@ const About = () => {
                   이중재
                 </span>
               </span>
-              </h2>
-            </div>
+            </h2>
+          </div>
 
-            
-          
           <div className="infos">
             <ul>
               <li>
@@ -231,14 +228,14 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Project Manager</h4>
+                  <h4>인턴십 프로그램</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2019 - Now</span>
+                    <span>2012</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Adobe Company</span>
+                    <span className="involve-group">한온 시스템(구 한라공조)</span>
                   </p>
                 </div>
               </div>
@@ -248,14 +245,14 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-up-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Team Leader</h4>
+                  <h4>학부 졸업</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2015 - 2019</span>
+                    <span>2013</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Twitter Inc</span>
+                    <span>아주대학교</span>
                   </p>
                 </div>
               </div>
@@ -265,14 +262,14 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Web Developer</h4>
+                  <h4>연구원</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2010 - 2015</span>
+                    <span>2013~2024</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Facebook</span>
+                    <span>현대자동차</span>
                   </p>
                 </div>
               </div>
@@ -282,14 +279,14 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-up-animation fadeInUp wow">
                 <div className="education">
-                  <h4>Master Degree</h4>
+                  <h4>회사 설립</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2003</span>
+                    <span>2022~</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>London University</span>
+                    <span>아우라웍스</span>
                   </p>
                 </div>
               </div>
@@ -299,14 +296,14 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="education">
-                  <h4>Bachelor Degree</h4>
+                  <h4>크몽 Prime 등급</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>1999</span>
+                    <span>2023~</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Berlin High School</span>
+                    <span>크몽</span>
                   </p>
                 </div>
               </div>

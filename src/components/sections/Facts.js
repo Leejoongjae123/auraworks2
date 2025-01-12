@@ -9,9 +9,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>13</h3>
+              <h3>4</h3>
               <p>
-                years of<span>experience</span>
+                창사<span>이후</span>
               </p>
             </div>
           </div>
@@ -24,9 +24,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>67</h3>
+              <h3>272</h3>
               <p>
-                completed<span>projects</span>
+                완료<span>프로젝트</span>
               </p>
             </div>
           </div>
@@ -39,9 +39,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>56</h3>
+              <h3>269</h3>
               <p>
-                Happy<span>customers</span>
+                만족<span>고객</span>
               </p>
             </div>
           </div>
@@ -54,9 +54,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>13</h3>
+              <h3>Prime</h3>
               <p>
-                awards<span>won</span>
+                크몽 등급<span>상위5%</span>
               </p>
             </div>
           </div>
@@ -69,9 +69,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>32</h3>
+              <h3>8</h3>
               <p>
-                learned<span>frameworks</span>
+                가능한<span>프레임워크</span>
               </p>
             </div>
           </div>

@@ -7,17 +7,9 @@ const Copyright = () => {
         src="assets/separator-copyright.png"
       />
       <div>
-        <span>© {new Date().getFullYear()} Steven Walker</span>
-        <span>
-          Designed By{" "}
-          <a
-            target="_blank"
-            href="https://themeforest.net/user/Codeefly/portfolio"
-          >
-            Codeefly
-          </a>
-        </span>
-        <ul>
+        <span>© {new Date().getFullYear()} AuraWorks</span>
+        
+        {/* <ul>
           <li>
             <a href="#">
               <i className="fa-brands fa-github" />
@@ -38,7 +30,7 @@ const Copyright = () => {
               <i className="fa-brands fa-facebook" />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

@@ -7,9 +7,7 @@ const Portfolio = () => {
       className="portfolio main-section flex-column-mobile"
       id="portfolio"
     >
-      {/* TITLE STARTS */}
       <div className="custom-title">
-        {/* MAIN TITLE STARTS */}
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
@@ -17,17 +15,13 @@ const Portfolio = () => {
             </span>
           </span>
         </h3>
-        {/* MAIN TITLE ENDS */}
       </div>
-      {/* TITLE ENDS */}
       <Swiper
         {...salimovSlider.portfolio}
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
-          {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <img
               className="img-fluid"
@@ -35,8 +29,6 @@ const Portfolio = () => {
               alt="Image Project"
             />
           </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
           <div className="details">
             <h4>Image Project</h4>
             <div>
@@ -73,12 +65,8 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-          {/* ITEM DETAILS ENDS */}
         </SwiperSlide>
-        {/* PORTFOLIO ITEM ENDS */}
-        {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
-          {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <div className="videocontainer">
               <iframe
@@ -88,8 +76,6 @@ const Portfolio = () => {
               />
             </div>
           </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
           <div className="details">
             <h4>Youtube Project</h4>
             <div>
@@ -126,12 +112,8 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-          {/* ITEM DETAILS ENDS */}
         </SwiperSlide>
-        {/* PORTFOLIO ITEM ENDS */}
-        {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
-          {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <Swiper
               {...salimovSlider.portfolioItems}
@@ -149,8 +131,6 @@ const Portfolio = () => {
               <div className="swiper-pagination" />
             </Swiper>
           </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
           <div className="details">
             <h4>Slider Project</h4>
             <div>
@@ -187,12 +167,8 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-          {/* ITEM DETAILS ENDS */}
         </SwiperSlide>
-        {/* PORTFOLIO ITEM ENDS */}
-        {/* PORTFOLIO ITEM STARTS */}
         <SwiperSlide className="single-item swiper-slide">
-          {/* ITEM MAIN CONTENT STARTS */}
           <div className="main-content">
             <a
               href="https://themeforest.net"
@@ -206,8 +182,6 @@ const Portfolio = () => {
               />
             </a>
           </div>
-          {/* ITEM MAIN CONTENT ENDS */}
-          {/* ITEM DETAILS STARTS */}
           <div className="details">
             <h4>External Link</h4>
             <div>
@@ -244,9 +218,7 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-          {/* ITEM DETAILS ENDS */}
         </SwiperSlide>
-        {/* PORTFOLIO ITEM ENDS */}
         <div className="nav-item next-item animated-btn">
           <span />
         </div>

@@ -22,7 +22,7 @@ const Contact = () => {
             <i className="fa fa-phone" />
             <p>
               <span className="small-text">phone</span>
-              +216 21 184 010
+              +82 010 9070 3001
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -31,7 +31,7 @@ const Contact = () => {
             <i className="fa fa-location-dot" />
             <p>
               <span className="small-text">address</span>
-              London, England
+              Seoul, Korea
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
           {/* CONTACT ITEM ENDS */}
           {/* CONTACT ITEM STARTS */}
-          <div className="animated-layer fade-in-up-animation fadeInUp wow">
+          {/* <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
             <span className="small-text">follow me</span>
             <ul className="social">
@@ -72,7 +72,7 @@ const Contact = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* CONTACT ITEM ENDS */}
         </div>
       </div>

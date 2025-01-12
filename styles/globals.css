@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
@@ -5,6 +9,10 @@
 
 .swiper-portfolio {
   padding-right: 250px;
+}
+
+.involve-group {
+  font-size: 16px; /* Added font size */
 }
 
 @media screen and (max-width: 767px) {
@@ -54,3 +62,4 @@
   font-size: 25px;
   color: #fff;
 }
+

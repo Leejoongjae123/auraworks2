@@ -12,32 +12,37 @@ const Clients = () => {
         >
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/themeforest-dark-background.png"
+                src="/logo/ktalpha.png"
                 alt="client"
+                style={{ width: "auto", height: "130px" }}
               />
             </div>
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/photodune-dark-background.png"
+                src="/logo/doosan.png"
                 alt="client"
+                style={{ width: "auto", height: "120px" }}
+
               />
             </div>
           </SwiperSlide>
           {/* SWIPER ITEM ENDS */}
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/graphicriver-dark-background.png"
+                src="/logo/kolon.png"
                 alt="client"
+                style={{ width: "auto", height: "100px" }}
               />
             </div>
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/codecanyon-dark-background.png"
+                src="/logo/hankook.png"
                 alt="client"
+                style={{ width: "auto", height: "150px" }}
               />
             </div>
           </SwiperSlide>
