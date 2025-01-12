@@ -49,68 +49,57 @@ const Clients = () => {
           {/* SWIPER ITEM ENDS */}
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/audiojungle-dark-background.png"
+                src="/logo/snu.png"
                 alt="client"
+                style={{ width: "auto", height: "100px" }}
               />
             </div>
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/activeden-dark-background.png"
+                src="/logo/jgd.png"
                 alt="client"
-              />
-            </div>
-          </SwiperSlide>
-          {/* SWIPER ITEM ENDS */}
-          {/* SWIPER ITEM STARTS */}
-          <SwiperSlide className="swiper-slide">
-            <div>
-              <img
-                src="assets/logos/3docean-dark-background.png"
-                alt="client"
-              />
-            </div>
-            <div>
-              <img
-                src="assets/logos/themeforest-dark-background.png"
-                alt="client"
+                style={{ width: "auto", height: "150px" }}
               />
             </div>
           </SwiperSlide>
           {/* SWIPER ITEM ENDS */}
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/activeden-dark-background.png"
+                src="/logo/lg.png"
                 alt="client"
+                style={{ width: "auto", height: "80px" }}
               />
             </div>
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/audiojungle-dark-background.png"
+                src="/logo/keis.png"
                 alt="client"
+                style={{ width: "auto", height: "50px" }}
               />
             </div>
           </SwiperSlide>
           {/* SWIPER ITEM ENDS */}
           {/* SWIPER ITEM STARTS */}
           <SwiperSlide className="swiper-slide">
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/graphicriver-dark-background.png"
+                src="/logo/kist.png"
                 alt="client"
+                style={{ width: "auto", height: "150px" }}
               />
             </div>
-            <div>
+            <div style={{ backgroundColor: "white" }}>
               <img
-                src="assets/logos/codecanyon-dark-background.png"
+                src="/logo/samick.png"
                 alt="client"
+                style={{ width: "auto", height: "150px" }}
               />
             </div>
           </SwiperSlide>
-          {/* SWIPER ITEM ENDS */}
           <div className="swiper-pagination" />
         </Swiper>
       </div>
