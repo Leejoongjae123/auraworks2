@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>아우라웍스</title>
+        <link>http://www.auraworks.co.kr</link>
+        <description>아우라웍스 소개</description>
+        <item>
+            <title>HOME</title>
+            <link>http://www.auraworks.co.kr</link>
+            <description>아우라웍스 홈페이지 소개</description>
+            <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+        </item>
+        <!-- 추가적인 <item> 요소를 여기에 추가 -->
+    </channel>
+</rss>
