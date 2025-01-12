@@ -12,6 +12,8 @@ import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
 import { jqueryFuntion } from "@/src/utilits";
 import { Fragment, useEffect } from "react";
+import Head from "next/head";
+
 const Index = () => {
   useEffect(() => {
     jqueryFuntion();
@@ -19,6 +21,12 @@ const Index = () => {
 
   return (
     <Fragment>
+      <Head>
+        <meta
+          name="naver-site-verification"
+          content="642b9efe2d11ed371f6dc35185796b7998e631f8"
+        />
+      </Head>
       <div className="page-content">
         <Header />
         <div id="wrapper">
