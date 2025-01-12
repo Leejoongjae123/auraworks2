@@ -36,9 +36,9 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>269</h3>
+              <h3>4.9/5</h3>
               <p>
-                만족<span>고객</span>
+                평균<span>평점</span>
               </p>
             </div>
           </div>
