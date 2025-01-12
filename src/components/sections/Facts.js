@@ -9,15 +9,12 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>4</h3>
-              <p>
-                창사<span>이후</span>
-              </p>
+              <h3>2022</h3>
+              <p>설립</p>
             </div>
           </div>
         </div>
-        {/* SINGE FACT ITEM ENDS */}
-        {/* SINGE FACT ITEM STARTS */}
+
         <div
           className="animated-layer fade-in-right-animation fadeInRight wow"
           data-wow-offset={200}
