@@ -22,7 +22,7 @@ const BlogPost = () => {
             </div>
             <div className="d-flex align-items-center">
               <i className="fa-solid fa-tag" />
-              <span>wordpress, business</span>
+              <span>Nextjs, Supabase</span>
             </div>
           </div>
           {/* META ENDS */}
