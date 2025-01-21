@@ -19,7 +19,7 @@ const Blog = () => {
       <div className="latestposts flex-column-mobile">
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/blog-post1" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img
@@ -31,7 +31,7 @@ const Blog = () => {
               <div className="content">
                 <span className="category">개발분야1</span>
                 <span className="title">
-                  챗봇 개발
+                  AI, LLM등을 활용한 챗봇 개발
                 </span>
                 <p>
                   각종 원본 데이타를 기반으로 하여 자동화된 챗봇이 상담원의 역할 대신도록 개발해드립니다.
@@ -53,7 +53,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/blog-post2" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img
@@ -68,7 +68,7 @@ const Blog = () => {
                   상품 정보 자동화 서비스
                 </span>
                 <p>
-                  상품 정보 자동화 서비스를 통해 상품 가격/재고 등을 자동으로 업데이트하여 쇼핑몰의 효율성을 향상시킵니다.
+                  상품 정보 자동화 서비스를 통해 상품 가격/재고 1등을 자동으로 업데이트하여 쇼핑몰의 효율성을 향상시킵니다.
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
@@ -87,7 +87,7 @@ const Blog = () => {
         {/* POST ITEM ENDS */}
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
-          <Link href="/blog-post" legacyBehavior>
+          <Link href="/blog-post3" legacyBehavior>
             <a>
               <span className="img-holder">
                 <img
@@ -99,7 +99,7 @@ const Blog = () => {
               <div className="content">
                 <span className="category">개발분야3</span>
                 <span className="title">
-                  웹 개발
+                  플랫폼(웹/앱) 개발
                 </span>
                 <p>
                   Next, Supabase 등 효과적인 프레임워크를 사용하고 빠르고 가볍게 MVP 모델을 만듭니다.

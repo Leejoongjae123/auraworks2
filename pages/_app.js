@@ -8,7 +8,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <SalimovHead />
-      <Switcher />
+      {/* <Switcher /> */}
       <Preloader />
       <Component {...pageProps} />
     </Fragment>
