@@ -30,9 +30,9 @@ const Index = () => {
           name="google-site-verification"
           content="2cmVGpUqBBn8W4mo5rByshQepyp-IQmXZ48YVnNL110"
         />
-        <meta name="description" content="웹 에이전시 아우라웍스 소개" />
+        <meta name="description" content="웹 & 업무 자동화 전문 개발 에이전시 아우라웍스 소개" />
         <meta property="og:title" content="아우라웍스" />
-        <meta property="og:description" content="웹 에이전시 아우라웍스 소개" />
+        <meta property="og:description" content="웹 & 업무 자동화 전문 개발 에이전시 아우라웍스 소개" />
       </Head>
       <div className="page-content">
         <Header />
