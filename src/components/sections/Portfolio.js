@@ -21,7 +21,7 @@ const Portfolio = () => {
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        <SwiperSlide className="single-item swiper-slide">
+        {/* <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <img
               className="img-fluid"
@@ -65,8 +65,8 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-        </SwiperSlide>
-        <SwiperSlide className="single-item swiper-slide">
+        </SwiperSlide> */}
+        {/* <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <div className="videocontainer">
               <iframe
@@ -112,7 +112,7 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <Swiper
@@ -120,52 +120,57 @@ const Portfolio = () => {
               className="swiper swiper-portfolio-item"
             >
               <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-2.jpg" title="img" />
+                <img src="portfolio/und/und1.jpg" title="img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-3.jpg" title="img" />
+                <img src="portfolio/und/und2.jpg" title="img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
-                <img src="assets/portfolio/project-1.jpg" title="img" />
+                <img src="portfolio/und/und3.jpg" title="img" />
               </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/und/und4.jpg" title="img" />
+              </SwiperSlide>
+              
+
               <div className="swiper-pagination" />
             </Swiper>
           </div>
           <div className="details">
-            <h4>Slider Project</h4>
+            <h4>기업 소개 웹 사이트 개발 건</h4>
             <div>
               <ul>
                 <li>
                   <span>
                     <i className="fa-regular fa-file-lines" /> Project :
                   </span>
-                  <span>Mobile App</span>
+                  <span>Web App</span>
                 </li>
                 <li>
                   <span>
                     <i className="fa-regular fa-user" /> Client :
                   </span>
-                  <span>Codecanyon</span>
+                  <span>주식회사 유앤디글로벌</span>
                 </li>
                 <li>
                   <span>
                     <i className="fa-regular fa-hourglass" /> Duration :
                   </span>
-                  <span>3 months</span>
+                  <span>1 months</span>
                 </li>
                 <li>
                   <span>
                     <i className="fa-solid fa-code-branch" /> Frameworks :
                   </span>
-                  <span>React JS</span>
+                  <span>Next JS</span>
                 </li>
               </ul>
             </div>
-            <a href="#" target="_blank" className="custom-btn">
+            {/* <a href="#" target="_blank" className="custom-btn">
               <span>
                 preview <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
-            </a>
+            </a> */}
           </div>
         </SwiperSlide>
         <SwiperSlide className="single-item swiper-slide">

@@ -135,7 +135,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-nextjs-plain"></i>
+                <i className="devicon-nextjs-plain"></i>
               </span>
               <h4>Nextjs</h4>
             </div>
@@ -143,7 +143,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-python-plain"></i>
+                <i className="devicon-python-plain"></i>
               </span>
               <h4>Python</h4>
             </div>
@@ -153,7 +153,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-fastapi-plain"></i>
+                <i className="devicon-fastapi-plain"></i>
               </span>
               <h4>Fast API</h4>
             </div>
@@ -161,7 +161,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-supabase-plain"></i>
+                <i className="devicon-supabase-plain"></i>
               </span>
               <h4>Supabase</h4>
             </div>
@@ -171,7 +171,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-tailwindcss-original"></i>
+                <i className="devicon-tailwindcss-original"></i>
               </span>
               <h4>Tailwindcss</h4>
             </div>
@@ -179,7 +179,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i className="devicon-amazonwebservices-plain-wordmark"></i>
               </span>
               <h4>AWS</h4>
             </div>
@@ -189,7 +189,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-down-animation fadeInLeft wow">
               <span>
-                <i class="devicon-postgresql-plain"></i>
+                <i className="devicon-postgresql-plain"></i>
               </span>
               <h4>PostgrSQL</h4>
             </div>
@@ -197,7 +197,7 @@ const About = () => {
             {/* SKILL ITEM STARTS */}
             <div className="animated-layer fade-in-up-animation fadeInRight wow">
               <span>
-                <i class="devicon-docker-plain"></i>
+                <i className="devicon-docker-plain"></i>
               </span>
               <h4>Docker</h4>
             </div>
