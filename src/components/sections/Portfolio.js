@@ -142,25 +142,25 @@ const Portfolio = () => {
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
                   </span>
-                  <span>Web App</span>
+                  <span>반응형 웹 사이트</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> 클라이언트 :
                   </span>
                   <span>주식회사 유앤디글로벌</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> 기간 :
                   </span>
-                  <span>1 months</span>
+                  <span>1개월</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
                   </span>
                   <span>Next JS</span>
                 </li>
@@ -174,6 +174,66 @@ const Portfolio = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="single-item swiper-slide">
+          <div className="main-content">
+            <Swiper
+              {...salimovSlider.portfolioItems}
+              className="swiper swiper-portfolio-item"
+            >
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/exgen/exgen1.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/exgen/exgen2.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/exgen/exgen3.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/exgen/exgen4.jpg" title="img" />
+              </SwiperSlide>
+              
+
+              <div className="swiper-pagination" />
+            </Swiper>
+          </div>
+          <div className="details">
+            <h4>제휴 마케팅 회사 커뮤니티 하이브리드 앱 개발건</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
+                  </span>
+                  <span>반응형 웹앱 + 하이브리드 앱</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> 클라이언트 :
+                  </span>
+                  <span>주회사 공생마케팅</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> 기간 :
+                  </span>
+                  <span>2개월</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
+                  </span>
+                  <span>Next JS,Supabase,Kotlin/Swift</span>
+                </li>
+              </ul>
+            </div>
+            {/* <a href="#" target="_blank" className="custom-btn">
+              <span>
+                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a> */}
+          </div>
+        </SwiperSlide>
+        {/* <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <a
               href="https://themeforest.net"
@@ -223,7 +283,7 @@ const Portfolio = () => {
               </span>
             </a>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <div className="nav-item next-item animated-btn">
           <span />
         </div>
