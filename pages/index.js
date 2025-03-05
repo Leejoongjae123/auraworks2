@@ -34,6 +34,8 @@ const Index = () => {
         <meta property="og:title" content="아우라웍스 | AURAWORKS" />
         <meta property="og:description" content="웹 & 업무 자동화 전문 개발 에이전시 아우라웍스 소개" />
         <meta property="og:image" content="/logo/logo.jpg" />
+        <link rel="shortcut icon" href="https://kakaotalk.s3.ap-northeast-2.amazonaws.com/favicon.png"/>
+
       </Head>
       <div className="page-content">
         <Header />

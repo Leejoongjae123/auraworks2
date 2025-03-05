@@ -21,98 +21,67 @@ const Portfolio = () => {
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        {/* <SwiperSlide className="single-item swiper-slide">
+        
+        <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
-            <img
-              className="img-fluid"
-              src="assets/portfolio/project-1.jpg"
-              alt="Image Project"
-            />
+            <Swiper
+              {...salimovSlider.portfolioItems}
+              className="swiper swiper-portfolio-item"
+            >
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/sontop/sontop1.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/sontop/sontop2.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/sontop/sontop3.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/sontop/sontop4.jpg" title="img" />
+              </SwiperSlide>
+              
+
+              <div className="swiper-pagination" />
+            </Swiper>
           </div>
           <div className="details">
-            <h4>Image Project</h4>
+            <h4>손해사정사 중개 플랫폼 "손탑"</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
                   </span>
-                  <span>Website</span>
+                  <span>반응형 웹 사이트</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> 클라이언트 :
                   </span>
-                  <span>Envato</span>
+                  <span>개인인</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> 기간 :
                   </span>
-                  <span>3 months</span>
+                  <span>2개월</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
                   </span>
-                  <span>WordPress</span>
+                  <span>Next JS,Supabase</span>
                 </li>
               </ul>
             </div>
-            <a href="#" target="_blank" className="custom-btn">
+            {/* <a href="#" target="_blank" className="custom-btn">
               <span>
                 preview <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
-            </a>
+            </a> */}
           </div>
-        </SwiperSlide> */}
-        {/* <SwiperSlide className="single-item swiper-slide">
-          <div className="main-content">
-            <div className="videocontainer">
-              <iframe
-                className="youtube-video"
-                src="https://www.youtube.com/embed/AqcjdkPMPJA?enablejsapi=1&version=3&playerapiid=ytplayer"
-                allowFullScreen=""
-              />
-            </div>
-          </div>
-          <div className="details">
-            <h4>Youtube Project</h4>
-            <div>
-              <ul>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
-                  </span>
-                  <span>Short Film</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-user" /> Client :
-                  </span>
-                  <span>Videohive</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
-                  </span>
-                  <span>8 months</span>
-                </li>
-                <li>
-                  <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
-                  </span>
-                  <span>After Effects</span>
-                </li>
-              </ul>
-            </div>
-            <a href="#" target="_blank" className="custom-btn">
-              <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
-              </span>
-            </a>
-          </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
             <Swiper
@@ -137,7 +106,7 @@ const Portfolio = () => {
             </Swiper>
           </div>
           <div className="details">
-            <h4>기업 소개 웹 사이트 개발 건</h4>
+            <h4>항공 유학원 "UND 글로벌"</h4>
             <div>
               <ul>
                 <li>
@@ -197,7 +166,7 @@ const Portfolio = () => {
             </Swiper>
           </div>
           <div className="details">
-            <h4>제휴 마케팅 회사 커뮤니티 하이브리드 앱 개발건</h4>
+            <h4>제휴 마케팅 회사 커뮤니티 "공생마케팅"</h4>
             <div>
               <ul>
                 <li>
@@ -233,57 +202,66 @@ const Portfolio = () => {
             </a> */}
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className="single-item swiper-slide">
+        <SwiperSlide className="single-item swiper-slide">
           <div className="main-content">
-            <a
-              href="https://themeforest.net"
-              target="_blank"
-              className="external"
+            <Swiper
+              {...salimovSlider.portfolioItems}
+              className="swiper swiper-portfolio-item"
             >
-              <img
-                className="img-fluid"
-                src="assets/portfolio/project-3.jpg"
-                alt="External Project"
-              />
-            </a>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/whatsapp/whatsapp1.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/whatsapp/whatsapp2.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/whatsapp/whatsapp3.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/whatsapp/whatsapp4.jpg" title="img" />
+              </SwiperSlide>
+              
+
+              <div className="swiper-pagination" />
+            </Swiper>
           </div>
           <div className="details">
-            <h4>External Link</h4>
+            <h4>물류 정보 질의응답 왓츠앱 챗봇 "선일챗봇"</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Project :
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
                   </span>
-                  <span>Advertising</span>
+                  <span>왓츠앱 챗봇봇</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Client :
+                    <i className="fa-regular fa-user" /> 클라이언트 :
                   </span>
-                  <span>Envato</span>
+                  <span>주식회사 선일</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Duration :
+                    <i className="fa-regular fa-hourglass" /> 기간 :
                   </span>
-                  <span>1 month</span>
+                  <span>1개월</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Frameworks :
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
                   </span>
-                  <span>Adobe Premiere</span>
+                  <span>Twilio,FastAPI, Supabase</span>
                 </li>
               </ul>
             </div>
-            <a href="#" target="_blank" className="custom-btn">
+            {/* <a href="#" target="_blank" className="custom-btn">
               <span>
                 preview <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
-            </a>
+            </a> */}
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <div className="nav-item next-item animated-btn">
           <span />
         </div>
