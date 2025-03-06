@@ -9,7 +9,7 @@ const Facts = () => {
         >
           <div>
             <div>
-              <h3>2022</h3>
+              <h3>2023</h3>
               <p>설립</p>
             </div>
           </div>

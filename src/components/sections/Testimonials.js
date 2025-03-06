@@ -47,6 +47,8 @@ const Testimonials = () => {
             {/* <img src="assets/testimonials/testimonial-2.jpg" alt="" /> */}
           </div>
         </div>
+        
+        
         {/* TESTIMONIAL ITEM ENDS */}
       </div>
       <img

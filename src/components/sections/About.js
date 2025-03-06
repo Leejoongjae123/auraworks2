@@ -282,7 +282,7 @@ const About = () => {
                   <h4>회사 설립</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2022~</span>
+                    <span>2023~</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
