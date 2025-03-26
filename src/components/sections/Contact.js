@@ -79,10 +79,10 @@ const Contact = () => {
       {/* CONTACTS ENDS */}
 
       {/* KAKAO MAP STARTS */}
-      <div className="animated-layer fade-in-up-animation fadeInUp wow" style={{ width: '100%' }}>
+      {/* <div className="animated-layer fade-in-up-animation fadeInUp wow" style={{ width: '100%' }}>
         <h3 className="small-text" style={{ marginTop: '20px', marginBottom: '10px' }}>찾아오시는 길</h3>
         <KakaoMap />
-      </div>
+      </div> */}
       {/* KAKAO MAP ENDS */}
 
       <img
