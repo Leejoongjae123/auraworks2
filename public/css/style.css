@@ -1386,7 +1386,7 @@ header .mobile-menu {
 }
 
 .testimonials .quote-container > div:before {
-  content: "”";
+  content: """;
   position: absolute;
   font-size: 69px;
   top: -100px;
@@ -1803,8 +1803,28 @@ header .mobile-menu {
 
 @media (max-width: 1024px) {
   section {
-    min-height: initial;
-    height: auto;
+    flex: none;
+    width: 100%;
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 50px;
+    overflow-y: visible;
+  }
+
+  #wrapper {
+    width: 100%;
+    overflow-x: visible;
+    overflow-y: auto;
+  }
+
+  main {
+    display: block;
+    width: 100%;
+    overflow-y: visible;
+  }
+
+  body {
+    overflow-y: auto;
   }
 
   .separator-mobile-down {

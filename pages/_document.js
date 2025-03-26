@@ -22,6 +22,13 @@ export default function Document() {
         <link rel="stylesheet" href="css/skins/yellow.css" />
         <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        
+        {/* 카카오맵 API 스크립트 */}
+        <script
+          type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은_API_키"
+          strategy="beforeInteractive"
+        ></script>
       </Head>
       <body>
         <Main />

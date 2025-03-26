@@ -77,6 +77,14 @@ const Contact = () => {
         </div>
       </div>
       {/* CONTACTS ENDS */}
+
+      {/* KAKAO MAP STARTS */}
+      <div className="animated-layer fade-in-up-animation fadeInUp wow" style={{ width: '100%' }}>
+        <h3 className="small-text" style={{ marginTop: '20px', marginBottom: '10px' }}>찾아오시는 길</h3>
+        <KakaoMap />
+      </div>
+      {/* KAKAO MAP ENDS */}
+
       <img
         alt=""
         className="separator hide-mobile"
@@ -85,4 +93,6 @@ const Contact = () => {
     </section>
   );
 };
+
+import KakaoMap from "@/src/components/KakaoMap";
 export default Contact;

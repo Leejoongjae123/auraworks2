@@ -138,6 +138,15 @@ export const jqueryFuntion = () => {
               animateContent();
               checkScroll();
             },
+            onInit: function() {
+              // 초기화 후 콘텐츠 애니메이션 적용
+              animateContent();
+              // 모바일 뷰에서도 스크롤 가능하도록 설정
+              if ($(window).width() <= 1024) {
+                $('body').css('overflow-y', 'auto');
+                $('main').css('overflow-y', 'visible');
+              }
+            }
           },
         });
       } else {
@@ -145,6 +154,21 @@ export const jqueryFuntion = () => {
           window.WOW = require("wowjs");
         }
         new WOW.WOW().init();
+        
+        // 모바일 환경에서 스크롤 활성화
+        $('body').css('overflow-y', 'auto');
+        $('main').css('overflow-y', 'visible');
+        
+        // 섹션 높이 조정
+        $('section').css('height', 'auto');
+        $('section').css('min-height', 'auto');
+        $('section').css('padding-bottom', '50px');
+        
+        // 모바일에서 애니메이션 요소 보이게 하기
+        setTimeout(function() {
+          animateContent();
+          $(".animated-layer").addClass("animated");
+        }, 1000);
       }
     }
   });

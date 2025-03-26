@@ -21,59 +21,79 @@ const About = () => {
 
   // 카카오 지도 초기화 함수
   useEffect(() => {
-    // 카카오 지도 스크립트가 로드된 후 실행
-    const initMap = () => {
-      if (window.kakao && window.kakao.maps) {
-        const mapContainer = document.getElementById('kakao-map');
-        const mapOption = {
-          center: new window.kakao.maps.LatLng(37.4497, 127.1605), // 성남시 수정구 창업로 40번길 20 근처 좌표
-          level: 3 // 지도의 확대 레벨
-        };
-        
-        // 지도 생성
-        const map = new window.kakao.maps.Map(mapContainer, mapOption);
-        
-        // 마커 생성
-        const markerPosition = new window.kakao.maps.LatLng(37.4497, 127.1605);
-        const marker = new window.kakao.maps.Marker({
-          position: markerPosition
-        });
-        
-        // 마커를 지도에 표시
-        marker.setMap(map);
-        
-        // 인포윈도우 생성
-        const iwContent = '<div style="padding:10px;width:200px;text-align:center;">아우라웍스<br>스타트업지원센터 4-1호</div>';
-        const infowindow = new window.kakao.maps.InfoWindow({
-          content: iwContent
-        });
-        
-        // 마커 클릭 시 인포윈도우 표시
-        window.kakao.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map, marker);
-        });
-        
-        // 페이지 로드 시 인포윈도우 표시
-        infowindow.open(map, marker);
-      }
-    };
+    // DOM이 완전히 렌더링된 후에 실행되도록 타임아웃 설정
+    const timer = setTimeout(() => {
+      // 카카오 지도 스크립트가 로드된 후 실행
+      const initMap = () => {
+        if (window.kakao && window.kakao.maps) {
+          const mapContainer = document.getElementById('kakao-map');
+          
+          // mapContainer가 존재하는지 확인
+          if (!mapContainer) {
+            console.error('지도를 표시할 요소를 찾을 수 없습니다.');
+            return;
+          }
+          
+          const mapOption = {
+            center: new window.kakao.maps.LatLng(37.4497, 127.1605), // 성남시 수정구 창업로 40번길 20 근처 좌표
+            level: 3 // 지도의 확대 레벨
+          };
+          
+          try {
+            // 지도 생성
+            const map = new window.kakao.maps.Map(mapContainer, mapOption);
+            
+            // 마커 생성
+            const markerPosition = new window.kakao.maps.LatLng(37.4497, 127.1605);
+            const marker = new window.kakao.maps.Marker({
+              position: markerPosition
+            });
+            
+            // 마커를 지도에 표시
+            marker.setMap(map);
+            
+            // 인포윈도우 생성
+            const iwContent = '<div style="padding:10px;width:200px;text-align:center;">아우라웍스<br>스타트업지원센터 4-1호</div>';
+            const infowindow = new window.kakao.maps.InfoWindow({
+              content: iwContent
+            });
+            
+            // 마커 클릭 시 인포윈도우 표시
+            window.kakao.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map, marker);
+            });
+            
+            // 페이지 로드 시 인포윈도우 표시
+            infowindow.open(map, marker);
+          } catch (error) {
+            console.error('지도 초기화 중 오류가 발생했습니다:', error);
+          }
+        } else {
+          console.error('카카오맵 SDK가 로드되지 않았습니다.');
+        }
+      };
 
-    // 카카오 지도 API 스크립트 로드
-    if (!document.getElementById('kakao-maps-script')) {
-      const script = document.createElement('script');
-      script.id = 'kakao-maps-script';
-      // 중요: 카카오 개발자 사이트에서 발급받은 API 키로 교체해야 합니다.
-      // https://developers.kakao.com/에서 애플리케이션 등록 후 발급받을 수 있습니다.
-      script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=2c6f2f6745e782b05f15d6184d826bdd";
-      script.async = true;
-      script.onload = initMap;
-      document.head.appendChild(script);
-    } else {
-      initMap();
-    }
+      // 카카오 지도 API 스크립트 로드
+      if (!document.getElementById('kakao-maps-script')) {
+        const script = document.createElement('script');
+        script.id = 'kakao-maps-script';
+        // 중요: 카카오 개발자 사이트에서 발급받은 API 키로 교체해야 합니다.
+        // https://developers.kakao.com/에서 애플리케이션 등록 후 발급받을 수 있습니다.
+        script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=2c6f2f6745e782b05f15d6184d826bdd&autoload=false";
+        script.async = true;
+        script.onload = () => {
+          // 스크립트 로드 후 kakao.maps SDK 초기화
+          window.kakao.maps.load(initMap);
+        };
+        document.head.appendChild(script);
+      } else {
+        initMap();
+      }
+    }, 1000); // 1초 지연
     
     return () => {
       // 컴포넌트 언마운트 시 클린업
+      clearTimeout(timer);
       const script = document.getElementById('kakao-maps-script');
       if (script) {
         script.onload = null;
@@ -169,7 +189,7 @@ const About = () => {
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
                     <span>주소 :</span>
-                    <span>경기도 성남시 수정구 창업로 40번길 20(시흥동 , SW드림타운), 지하2층 스타트업지원센터 4-1호</span>
+                    <span>경기도 성남시 수정구 창업로 40번길 20(시흥동 , SW드림타운),<br/>지하2층 스타트업지원센터 4-1호</span>
                   </span>
                 </span>
               </li>
@@ -177,11 +197,20 @@ const About = () => {
             
             {/* 카카오 지도 추가 */}
             <div className="animated-layer fade-in-up-animation fadeInUp wow mt-4">
-              <div 
+              {/* <div 
                 id="kakao-map" 
-                style={{ width: '100%', height: '250px', marginTop: '10px', borderRadius: '8px', overflow: 'hidden' }}
+                style={{ 
+                  width: '100%', 
+                  height: '250px', 
+                  marginTop: '10px', 
+                  borderRadius: '8px', 
+                  overflow: 'hidden',
+                  display: 'block', // 명시적으로 표시 속성 설정
+                  position: 'relative', // 위치 속성 추가
+                  zIndex: 1 // z-index 설정하여 다른 요소보다 위에 표시
+                }}
                 className="border border-[#252525] shadow-lg"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -287,7 +316,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation">
-                My Resume
+                My History
               </span>
             </span>
           </h3>
