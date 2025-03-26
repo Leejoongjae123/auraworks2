@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useEffect } from "react";
 
 const About = () => {
   // 나이 계산 함수 추가
@@ -17,6 +18,68 @@ const About = () => {
 
     return age;
   };
+
+  // 카카오 지도 초기화 함수
+  useEffect(() => {
+    // 카카오 지도 스크립트가 로드된 후 실행
+    const initMap = () => {
+      if (window.kakao && window.kakao.maps) {
+        const mapContainer = document.getElementById('kakao-map');
+        const mapOption = {
+          center: new window.kakao.maps.LatLng(37.4497, 127.1605), // 성남시 수정구 창업로 40번길 20 근처 좌표
+          level: 3 // 지도의 확대 레벨
+        };
+        
+        // 지도 생성
+        const map = new window.kakao.maps.Map(mapContainer, mapOption);
+        
+        // 마커 생성
+        const markerPosition = new window.kakao.maps.LatLng(37.4497, 127.1605);
+        const marker = new window.kakao.maps.Marker({
+          position: markerPosition
+        });
+        
+        // 마커를 지도에 표시
+        marker.setMap(map);
+        
+        // 인포윈도우 생성
+        const iwContent = '<div style="padding:10px;width:200px;text-align:center;">아우라웍스<br>스타트업지원센터 4-1호</div>';
+        const infowindow = new window.kakao.maps.InfoWindow({
+          content: iwContent
+        });
+        
+        // 마커 클릭 시 인포윈도우 표시
+        window.kakao.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map, marker);
+        });
+        
+        // 페이지 로드 시 인포윈도우 표시
+        infowindow.open(map, marker);
+      }
+    };
+
+    // 카카오 지도 API 스크립트 로드
+    if (!document.getElementById('kakao-maps-script')) {
+      const script = document.createElement('script');
+      script.id = 'kakao-maps-script';
+      // 중요: 카카오 개발자 사이트에서 발급받은 API 키로 교체해야 합니다.
+      // https://developers.kakao.com/에서 애플리케이션 등록 후 발급받을 수 있습니다.
+      script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=2c6f2f6745e782b05f15d6184d826bdd";
+      script.async = true;
+      script.onload = initMap;
+      document.head.appendChild(script);
+    } else {
+      initMap();
+    }
+    
+    return () => {
+      // 컴포넌트 언마운트 시 클린업
+      const script = document.getElementById('kakao-maps-script');
+      if (script) {
+        script.onload = null;
+      }
+    };
+  }, []);
 
   // 생년월일 설정
   const birthDate = "1988-08-15";
@@ -85,19 +148,12 @@ const About = () => {
               </li>
             </ul>
             <ul>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>주소 :</span>
-                    <span>서울 강남</span>
-                  </span>
-                </span>
-              </li>
+
               <li>
                 <span>
                   <span className="animated-layer fade-in-up-animation fadeInUp wow">
                     <span>연락처 :</span>
-                    <span>010-9070-3001</span>
+                    <a href="tel:010-9070-3001">010-9070-3001</a>
                   </span>
                 </span>
               </li>
@@ -109,7 +165,24 @@ const About = () => {
                   </span>
                 </span>
               </li>
+              <li>
+                <span>
+                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                    <span>주소 :</span>
+                    <span>경기도 성남시 수정구 창업로 40번길 20(시흥동 , SW드림타운), 지하2층 스타트업지원센터 4-1호</span>
+                  </span>
+                </span>
+              </li>
             </ul>
+            
+            {/* 카카오 지도 추가 */}
+            <div className="animated-layer fade-in-up-animation fadeInUp wow mt-4">
+              <div 
+                id="kakao-map" 
+                style={{ width: '100%', height: '250px', marginTop: '10px', borderRadius: '8px', overflow: 'hidden' }}
+                className="border border-[#252525] shadow-lg"
+              />
+            </div>
           </div>
         </div>
         {/* INFO ENDS */}
@@ -123,7 +196,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation fadeInUp wow">
-                My Skills
+                Our Skills
               </span>
             </span>
           </h3>
