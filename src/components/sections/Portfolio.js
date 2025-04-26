@@ -286,7 +286,7 @@ const Portfolio = () => {
             </Swiper>
           </div>
           <div className="details">
-            <h4>스쿠버 다이빙 프로그램 예약 관리 플랫폼폼</h4>
+            <h4>스쿠버 다이빙 프로그램 예약 관리 플랫폼</h4>
             <div>
               <ul>
                 <li>
