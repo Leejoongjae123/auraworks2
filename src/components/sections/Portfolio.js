@@ -209,6 +209,127 @@ const Portfolio = () => {
               className="swiper swiper-portfolio-item"
             >
               <SwiperSlide className="swiper-slide">
+                <img src="portfolio/diabetes/diabetes1.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/diabetes/diabetes2.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/diabetes/diabetes3.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/diabetes/diabetes4.jpg" title="img" />
+              </SwiperSlide>
+              
+
+              <div className="swiper-pagination" />
+            </Swiper>
+          </div>
+          <div className="details">
+            <h4>애견 당뇨병 소변 검사지 분석 앱 개발</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
+                  </span>
+                  <span>반응형 웹앱 + 하이브리드 앱</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> 클라이언트 :
+                  </span>
+                  <span>개인</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> 기간 :
+                  </span>
+                  <span>2개월</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
+                  </span>
+                  <span>NextJS,Supabase,React Native</span>
+                </li>
+              </ul>
+            </div>
+            {/* <a href="#" target="_blank" className="custom-btn">
+              <span>
+                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="single-item swiper-slide">
+          <div className="main-content">
+            <Swiper
+              {...salimovSlider.portfolioItems}
+              className="swiper swiper-portfolio-item"
+            >
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/scuber/scuber1.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/scuber/scuber2.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/scuber/scuber3.jpg" title="img" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src="portfolio/scuber/scuber4.jpg" title="img" />
+              </SwiperSlide>
+              
+
+              <div className="swiper-pagination" />
+            </Swiper>
+          </div>
+          <div className="details">
+            <h4>스쿠버 다이빙 프로그램 예약 관리 플랫폼폼</h4>
+            <div>
+              <ul>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-file-lines" /> 프로젝트 :
+                  </span>
+                  <span>반응형 웹앱</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-user" /> 클라이언트 :
+                  </span>
+                  <span>주식회사 디에이치이이</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-regular fa-hourglass" /> 기간 :
+                  </span>
+                  <span>3개월</span>
+                </li>
+                <li>
+                  <span>
+                    <i className="fa-solid fa-code-branch" /> 프레임워크 :
+                  </span>
+                  <span>NextJS,Supabase</span>
+                </li>
+              </ul>
+            </div>
+            {/* <a href="#" target="_blank" className="custom-btn">
+              <span>
+                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+              </span>
+            </a> */}
+          </div>
+        </SwiperSlide>
+        
+        <SwiperSlide className="single-item swiper-slide">
+          <div className="main-content">
+            <Swiper
+              {...salimovSlider.portfolioItems}
+              className="swiper swiper-portfolio-item"
+            >
+              <SwiperSlide className="swiper-slide">
                 <img src="portfolio/whatsapp/whatsapp1.jpg" title="img" />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
